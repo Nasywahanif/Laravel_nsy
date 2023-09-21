@@ -23,7 +23,13 @@
             <td>{{ $sekolah -> jurusan }}</td>
             <td>{{ $sekolah -> jumlah_guru }}</td>
             <td>
-                <a href="#">Edit</a>
+                <a href="{{ route('sekolahs.edit', $sekolah->id) }}">Edit</a>
+
+                <form action="{{ route('sekolahs.destroy', $sekolah->id) }}" method="POST">
+                @csrf
+                @method('DELETE')
+                <input type="submit" value="Hapus" class="btn btn-danger btn-sm">
+                </form>
             </td>
           </tr>
           @endforeach

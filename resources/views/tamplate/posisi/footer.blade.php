@@ -21,7 +21,7 @@
                   <li class="list-inline-item">
                     Copyright &copy; 2023
                     <a href="." class="link-secondary">Tabler</a>.
-                    All rights reserved.
+                    Nasywa Sukria Hanifa
                   </li>
                   <li class="list-inline-item">
                     <a href="./changelog.html" class="link-secondary" rel="noopener">

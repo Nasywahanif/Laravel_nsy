@@ -32,4 +32,10 @@ Route::get('/sekolahs', function () {
     return view('sekolahs.index');
 });
 
-Route::get('/sekolahs', [SekolahController::class, 'index']);
+Route::get('/sekolahs', [SekolahController::class, 'index'])->name('sekolahs.index');
+Route::get('/sekolahs/tambah',[SekolahController::class, 'tambah'])->name('sekolahs.tambah');
+Route::post('/sekolahs',[SekolahController::class, 'store'])->name('sekolahs.store');
+Route::get('/sekolahs/{id}/edit',[SekolahController::class, 'edit'])->name('sekolahs.edit');
+Route::put('/sekolahs{id}',[SekolahController::class, 'update'])->name('sekolahs.update');
+Route::delete('/siswa/{id}', [SekolahController::class, 'destroy'])->name('sekolahs.destroy');
+
